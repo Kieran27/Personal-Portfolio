@@ -239,6 +239,7 @@ button {
 
 .project-hover-container {
   position: absolute;
+  overflow: hidden;
   bottom: 0;
   height: 0;
   width: 100%;
@@ -283,7 +284,8 @@ button {
 }
 
 .contact-container-full {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
   background: white;
   padding: 2rem 1rem;
@@ -296,6 +298,37 @@ button {
 
 .contact-container p {
   text-align: center;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.contact-info-container {
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.contact-info-item span {
+  margin-right: 2rem;
+}
+
+.contact-info-item a {
+  transition: 0.2s;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.contact-info-item a:hover {
+  background: var(--Dark-Primary);
+  color: white;
 }
 
 .footer {
@@ -338,36 +371,14 @@ button {
   padding: 1rem 2rem;
 }
 
-@media only screen and (max-width: 950px) {
-  .hero-container {
-    justify-content: center;
-    margin: 2rem 0;
-  }
-
-  .hero-right {
-    display: none;
-    margin-top: 3rem;
-    align-self: baseline;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-
-  #btn-hamburger {
-    display: block;
-  }
-
-  .header-right nav  {
-    display: none;
-  }
-
-  .projects-grid {
-    gap: 2.5rem;
-  }
-}
-
 .hover-state {
   color: white;
+}
+
+@media (hover: hover) {
+  body {
+    background: steelblue;
+  }
 }
 
 .pullout-nav {
@@ -415,4 +426,53 @@ button {
   overflow-y: hidden;
   background: rgba(0, 0, 0, 0.7);
   z-index: 9999999;
+}
+
+@media only screen and (max-width: 950px) {
+  .hero-container {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .hero-right {
+    display: none;
+    margin-top: 3rem;
+    align-self: baseline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #btn-hamburger {
+    display: block;
+  }
+
+  .header-content {
+    padding: 2rem 1rem;
+  }
+
+  .footer-content {
+    padding: 1rem 1rem;
+  }
+
+  .header-right nav  {
+    display: none;
+  }
+
+  .projects-grid {
+    gap: 2.5rem;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  .contact-container-full {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-info-item span {
+    margin-right: 1rem;
+  }
 }
