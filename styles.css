@@ -132,6 +132,7 @@ button {
   margin-top: 6rem;
   margin-bottom: 6rem;
   max-width: 1200px;
+  height: 80vh;
 }
 
 .hero-right {
@@ -170,6 +171,7 @@ button {
   margin: 0 auto;
   max-width: 1200px;
   padding: 1rem 1rem;
+  min-height: 65vh;
 }
 
 .about-me-container p {
@@ -180,16 +182,31 @@ button {
 .skills-container-header {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .skills-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3.5rem;
+  margin-bottom: 3rem;
 }
 
 .skill {
   max-width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill i {
+  font-size: 5rem;
+}
+
+.skill span {
+  font-size:  0.8rem;
 }
 
 .skill img {
@@ -233,6 +250,7 @@ button {
 }
 
 .project-img-container img {
+  border: solid 3px var(--Dark-Primary);
   width: 100%;
   z-index: 0;
 }
@@ -377,7 +395,6 @@ button {
 
 @media (hover: hover) {
   body {
-    background: steelblue;
   }
 }
 
@@ -467,12 +484,48 @@ button {
     text-align: center;
   }
 
+  .skills-container {
+    gap: 2rem;
+  }
+
+  .skill i {
+    font-size: 3rem;
+  }
+
   .contact-container-full {
     margin-top: 0;
     margin-bottom: 0;
   }
 
+  .contact-info-item {
+    align-self: flex-start;
+    padding-left: 1.5rem;
+  }
+
+
   .contact-info-item span {
     margin-right: 1rem;
   }
+}
+
+/* For Very Small Screen*/
+
+@media only screen and (max-width: 450px) {
+
+  .about-me-container p {
+    font-size: 0.85rem;
+  }
+
+  .skills-container {
+    gap: 1.5rem;
+  }
+
+  .skill i {
+    font-size: 2rem;
+  }
+
+  .contact-info-item {
+    padding-left: 0.25rem;
+  }
+
 }
