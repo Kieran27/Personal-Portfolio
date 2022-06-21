@@ -5,6 +5,7 @@
 :root {
   --Primary-Font: 'IBM Plex Mono', monospace;
   --Dark-Primary: #1F2937;
+  --Mid-Gray: #D1D5DB;
   --Light-Gray:
 }
 
@@ -162,7 +163,7 @@ button {
   width: 250px;
   height: 250px;
   background: red;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .hero-about-me-container {
@@ -182,6 +183,58 @@ button {
   color: black;
   border: solid 2px black;
 }
+
+.hero-arrow-container {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 1rem 0 1rem 5rem;
+  margin-top: 5rem;
+}
+
+.arrow {
+  display: block;
+  position: relative;
+  width: 7px;
+  height: 50px;
+  background-color: var(--Mid-Gray);
+  transition: 0.2s;
+  animation: bounce 4s infinite;
+}
+
+.arrow::before,
+.arrow:after  {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background: var(--Mid-Gray);
+  width: 5px;
+  height: 25px;
+}
+
+.arrow::before {
+  transform: translate(-8px, 3px) rotate(-45deg);
+}
+
+.arrow::after {
+    transform: translate(8px, 4px) rotate(45deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-55px);
+  }
+
+  100%  {
+    transform: translateY(0);
+  }
+}
+
 
 .about-me-container {
   margin: 0 auto;
@@ -231,7 +284,7 @@ button {
 
 .projects-container-full {
   width: 100%;
-  background: #d1d5db;
+  background: var(--Mid-Gray);
   padding: 1.5rem 0 3.5rem 0;
 }
 
@@ -501,6 +554,15 @@ button {
     display: none;
   }
 
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-arrow-container {
+    justify-content: center;
+    padding: 1rem;
+  }
+
   .projects-grid {
     gap: 2.5rem;
   }
@@ -536,10 +598,6 @@ button {
 /* For Very Small Screen*/
 
 @media only screen and (max-width: 450px) {
-
-  .hero-left {
-    text-align: center;
-  }
 
   .about-me-container p {
     font-size: 0.85rem;
