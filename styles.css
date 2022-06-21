@@ -4,8 +4,8 @@
 
 :root {
   --Primary-Font: 'IBM Plex Mono', monospace;
-
   --Dark-Primary: #1F2937;
+  --Light-Gray:
 }
 
 html {
@@ -432,6 +432,7 @@ button {
   margin-top: 5rem;
   padding: 1rem 2rem;
   flex-grow: 1;
+  position: relative;
 }
 
 .side-nav-content ul {
@@ -449,6 +450,14 @@ button {
 .side-nav-content ul li a:hover {
   opacity: 0.65;
   border-bottom: solid 1px black;
+}
+
+.side-nav-footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 236px;
 }
 
 .toggle-width {
@@ -528,6 +537,10 @@ button {
 
 @media only screen and (max-width: 450px) {
 
+  .hero-left {
+    text-align: center;
+  }
+
   .about-me-container p {
     font-size: 0.85rem;
   }
@@ -547,6 +560,14 @@ button {
 
   .contact-info-item {
     padding-left: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .contact-info-item span {
+    margin-right: 0;
   }
 
 }

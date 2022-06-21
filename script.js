@@ -6,3 +6,11 @@ hamburgerBtn.addEventListener('click', (e) => {
   hamburgerBtn.classList.toggle('open')
   document.querySelector('body').classList.toggle('body-toggle')
 })
+
+sideNav.querySelectorAll('li').forEach(listItem => {
+  listItem.addEventListener('click', (e) => {
+    sideNav.classList.toggle('toggle-width')
+    hamburgerBtn.classList.toggle('open')
+    document.querySelector('body').classList.toggle('body-toggle')
+  })
+})
