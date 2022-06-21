@@ -158,7 +158,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 }
 
 .img-mock {
@@ -224,20 +224,25 @@ button {
     transform: translate(8px, 4px) rotate(45deg);
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-55px);
-  }
-
-  100%  {
-    transform: translateY(0);
-  }
+#header-main {
+  animation: fade-in 750ms ease-out forwards;
 }
 
+#sub-header {
+  animation: fade-in 750ms ease-out 1s backwards;
+}
+
+#hero-about {
+  animation: fade-in 750ms ease-out 2s backwards;
+}
+
+#arrow-container {
+  animation: fade-in 750ms ease-out 3s backwards;
+}
+
+#hero-right {
+  animation: appear-in 500ms ease-in 4s backwards;
+}
 
 .about-me-container {
   margin: 0 auto;
@@ -548,10 +553,38 @@ button {
 @keyframes fade-in {
   from {
     opacity: 0;
+    transform: translateY(100px);
   }
 
   to  {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear-in {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-55px);
+  }
+
+  100%  {
+    transform: translateY(0);
   }
 }
 
