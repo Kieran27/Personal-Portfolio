@@ -105,9 +105,12 @@ button {
 
 #btn-hamburger {
   display: none;
+
 }
 
 .hamburger-btn-container {
+  display: flex;
+  align-items: center;
   display: block;
   cursor: pointer;
 }
@@ -120,6 +123,19 @@ button {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
+}
+
+#btn-hamburger.open .line:nth-child(2){
+  transform: translateX(-25px);
+  opacity: 0;
+}
+
+#btn-hamburger.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-10px, 6px)
+}
+
+#btn-hamburger.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -2px);
 }
 
 .hero-container {
@@ -524,8 +540,13 @@ button {
     font-size: 2rem;
   }
 
+  .contact-info-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .contact-info-item {
-    padding-left: 0.25rem;
+    padding-left: 1rem;
   }
 
 }
