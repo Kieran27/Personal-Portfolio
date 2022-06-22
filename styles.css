@@ -191,16 +191,17 @@ button {
   display: flex;
   justify-content: flex-start;
   text-align: center;
-  padding: 1rem 0 1rem 5rem;
+  padding: 1rem 0 1rem 11rem;
   margin-top: 5rem;
 }
 
 .arrow {
   display: block;
+  cursor: pointer;
   position: relative;
   width: 7px;
   height: 50px;
-  background-color: var(--Mid-Gray);
+  background-color: var(--Dark-Primary);
   transition: 0.2s;
   animation: bounce 4s infinite;
 }
@@ -211,17 +212,17 @@ button {
   position: absolute;
   bottom: 0;
   display: block;
-  background: var(--Mid-Gray);
+  background: var(--Dark-Primary);
   width: 5px;
   height: 25px;
 }
 
 .arrow::before {
-  transform: translate(-8px, 3px) rotate(-45deg);
+  transform: translate(-10px, 1px) rotate(-45deg);
 }
 
 .arrow::after {
-    transform: translate(8px, 4px) rotate(45deg);
+    transform: translate(12px, 1px) rotate(45deg);
 }
 
 #header-main {
