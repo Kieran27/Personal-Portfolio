@@ -184,7 +184,7 @@ button {
 .hero-about-me-container a:hover {
   background: white;
   color: black;
-  border: solid 2px black;
+  outline: solid 2px black;
 }
 
 .hero-arrow-container {
@@ -352,7 +352,7 @@ button {
   height: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.65);
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
   transition: height 0.25s ease;
 }
 
@@ -395,7 +395,7 @@ button {
 .projects-more-container a:hover {
   background: white;
   color: black;
-  border: solid 2px black;
+  outline: solid 2px black;
 }
 
 .contact-container-full {
@@ -486,11 +486,6 @@ button {
 
 .hover-state {
   color: white;
-}
-
-@media (hover: hover) {
-  body {
-  }
 }
 
 .pullout-nav {
@@ -589,6 +584,24 @@ button {
 }
 
 /* Media Queries */
+
+@media (hover: hover) {
+
+  .project-img-container {
+    width: 380px;
+    height: 380px;
+  }
+
+  .no-hover {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  .project-hover-container {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 950px) {
   .hero-container {
