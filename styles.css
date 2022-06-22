@@ -151,7 +151,7 @@ button {
   margin-top: 6rem;
   margin-bottom: 6rem;
   max-width: 1200px;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .hero-right {
@@ -237,11 +237,11 @@ button {
 }
 
 #arrow-container {
-  animation: fade-in 750ms ease-out 3s backwards;
+  animation: fade-in 750ms ease-out 2.5s backwards;
 }
 
 #hero-right {
-  animation: appear-in 500ms ease-in 4s backwards;
+  animation: appear-in 500ms ease-in 3.5s backwards;
 }
 
 .about-me-container {
@@ -255,6 +255,26 @@ button {
   line-height: 1.5;
   letter-spacing: 1.1px;
 }
+
+.resume-download-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-download-container a {
+    padding: 0.75rem 1.2rem;
+    color: white;
+    background: #1f2937;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.resume-download-container a:hover {
+  background: white;
+  color: black;
+  outline: solid 2px black;
+}
+
 
 .skills-container-header {
   display: flex;
@@ -337,12 +357,12 @@ button {
 
 .project-img-container {
   position: relative;
+  /* padding: 0.5rem;
+  border: solid 3px var(--Dark-Primary); */
 }
 
 .project-img-container img {
-  border: solid 3px var(--Dark-Primary);
   width: 100%;
-  z-index: 0;
 }
 
 .project-hover-container {
@@ -352,7 +372,7 @@ button {
   height: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.65);
-  /* margin-bottom: 4px; */
+  margin-bottom: 4px;
   transition: height 0.25s ease;
 }
 
@@ -585,7 +605,7 @@ button {
 
 /* Media Queries */
 
-@media (hover: hover) {
+/* @media (hover: hover) {
 
   .project-img-container {
     width: 380px;
@@ -595,7 +615,8 @@ button {
   .no-hover {
     display: none;
   }
-}
+
+} */
 
 @media (hover: none) {
   .project-hover-container {
@@ -603,7 +624,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 60em) {
   .hero-container {
     justify-content: center;
     margin: 2rem 0;
@@ -616,7 +637,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 38em) {
 
   html {
     scroll-padding: 95px 0 0 0;
@@ -681,7 +702,12 @@ button {
 
 /* For Very Small Screen*/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 28.125em) {
+
+  .hero-about-me-container a {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
 
   .about-me-container p {
     font-size: 0.85rem;
@@ -706,7 +732,7 @@ button {
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 25em) {
 
   .contact-info-item span {
     margin-right: 0;
