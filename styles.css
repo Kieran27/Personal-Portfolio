@@ -555,14 +555,16 @@ button {
   width: 236px;
 }
 
+.toggle-transparent-bg  {
+  box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+}
+
 .toggle-width {
   width: 300px;
 }
 
-.body-toggle {
+.scroll-toggle {
   overflow-y: hidden;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 9999999;
 }
 
 /* Animations */
@@ -701,7 +703,7 @@ button {
   }
 }
 
-/* For Very Small Screen*/
+/* For Small Screen*/
 
 @media only screen and (max-width: 28.125em) {
 
