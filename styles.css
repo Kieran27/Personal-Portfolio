@@ -163,9 +163,13 @@ button {
 
 .img-mock {
   display: block;
+  background-image: url("./assets/hero-image.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 250px;
   height: 250px;
-  background: red;
+  border: solid 1px black;
   border-radius: 50%;
 }
 
