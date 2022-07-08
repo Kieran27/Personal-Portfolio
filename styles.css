@@ -201,7 +201,7 @@ button {
 
 .arrow {
   display: block;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   width: 7px;
   height: 50px;
