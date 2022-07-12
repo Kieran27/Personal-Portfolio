@@ -451,15 +451,16 @@ button {
 
 .contact-container p {
   text-align: center;
-  margin: 1rem 0 1.5rem 0;
+  line-height: 2;
+  margin: 0 0 1.5rem 0;
 }
 
 .contact-content-wrapper {
-  margin-top: 3rem;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+
   align-items: center;
 }
 
@@ -482,7 +483,9 @@ button {
   padding: 1rem 2.4rem;
   border: 3px solid var(--Dark-Primary);
   font-size: 1.2rem;
+  min-width: 218px;
   border-radius: 10px;
+  margin-bottom: 3rem;
   transition: 0.2s;
 }
 
@@ -558,6 +561,11 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1.1rem;
 }
 
 .footer-right a {
@@ -763,6 +771,14 @@ button {
 
   .contact-info-item span {
     margin-right: 1rem;
+  }
+
+  .footer {
+    margin-top: 2rem;
+  }
+
+  .footer-right {
+    gap: 0.8rem;
   }
 }
 
