@@ -36,7 +36,7 @@ body {
   background-color: white;
   opacity: 1;
   background-image: radial-gradient(rgba(0, 0, 0, 0.6) 0.1px, white 1px);
-  background-size: 19px 19px;
+  background-size: 22px 22px;
 }
 
 main {
@@ -470,7 +470,6 @@ button {
 }
 
 .contact-right {
-  max-width: 200px;
 }
 
 .contact-right img {
@@ -478,10 +477,12 @@ button {
 }
 
 .contact-me-link {
+  background: white;
   box-shadow: -3px 5px var(--Dark-Primary);
   padding: 1rem 2.4rem;
   border: 3px solid var(--Dark-Primary);
   font-size: 1.2rem;
+  border-radius: 10px;
   transition: 0.2s;
 }
 
