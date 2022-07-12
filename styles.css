@@ -19,6 +19,7 @@ body {
   margin: 0;
   font-family: var(--Primary-Font), sans-serif;
   height: 100%;
+  position: relative;
 }
 
 .wrapper {
@@ -28,6 +29,14 @@ body {
   display: flex;
   flex-direction: column;
   /* padding: 1rem; */
+}
+
+.background-pattern {
+  z-index: -5;
+  background-color: white;
+  opacity: 1;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.6) 0.1px, white 1px);
+  background-size: 19px 19px;
 }
 
 main {
@@ -189,7 +198,7 @@ button {
   background: white;
   color: black;
   box-shadow: -3px 5px var(--Dark-Primary);
-  border: 3px solid var(--Dark-Primary)
+  border: 3px solid var(--Dark-Primary);
 }
 
 .hero-arrow-container {
@@ -430,7 +439,7 @@ button {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
-  background: white;
+  /* background: white; */
   padding: 2rem 1rem;
 }
 
@@ -446,9 +455,11 @@ button {
 }
 
 .contact-content-wrapper {
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  flex-direction: column;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -468,9 +479,9 @@ button {
 
 .contact-me-link {
   box-shadow: -3px 5px var(--Dark-Primary);
-  padding: 0.6rem 1rem;
+  padding: 1rem 2.4rem;
   border: 3px solid var(--Dark-Primary);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: 0.2s;
 }
 
@@ -510,6 +521,7 @@ button {
 }
 
 .footer {
+  background: white;
   text-align: center;
 }
 
@@ -550,7 +562,6 @@ button {
 .footer-right a {
   transition: 0.2s;
 }
-
 
 .footer-right a:hover {
   color: #33332d;
