@@ -187,18 +187,22 @@ button {
 }
 
 .hero-about-me-container a {
-  padding: 1rem 2rem;
-  color: white;
-  background: #1f2937;
+  background: white;
+  box-shadow: -3px 5px var(--Dark-Primary);
+  padding: 1rem 2.4rem;
+  border: 3px solid var(--Dark-Primary);
   border-radius: 10px;
+  margin-bottom: 3rem;
   transition: 0.2s;
 }
 
+.hero-about-me-container a:first-child {
+  margin-right: 0.5rem;
+}
+
 .hero-about-me-container a:hover {
-  background: white;
-  color: black;
-  box-shadow: -3px 5px var(--Dark-Primary);
-  border: 3px solid var(--Dark-Primary);
+  color: white;
+  background: var(--Dark-Primary);
 }
 
 .hero-arrow-container {
@@ -388,6 +392,7 @@ button {
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 2.5px;
+  margin-bottom: 0.75rem;
 }
 
 
@@ -402,6 +407,12 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.project-headline {
+  font-style: italic;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
 }
 
 .project-info {
@@ -666,22 +677,8 @@ button {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .project-section {
-    flex-direction: column;
-  }
+@media only screen and (max-width: 1000px) {
 
-  .project-section:nth-child(even) {
-    flex-direction: column;
-  }
-
-  .project-left {
-
-  }
-
-  .project-info {
-    min-width: 100%;
-  }
 
 }
 
@@ -696,6 +693,23 @@ button {
     margin-top: 3rem;
     align-self: baseline;
   }
+
+  .project-section {
+    flex-direction: column;
+  }
+
+  .project-section:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .project-left {
+    width: 80%;
+  }
+
+  .project-info {
+    min-width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 38em) {
@@ -731,6 +745,10 @@ button {
 
   .projects-grid {
     gap: 2.5rem;
+  }
+
+  .project-left {
+    width: 100%;
   }
 
   .section-header {
