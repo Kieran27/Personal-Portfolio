@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,535 +19,359 @@
   <script src="script.js" defer charset="utf-8"></script>
   <script src="https://kit.fontawesome.com/f33bdcd799.js" crossorigin></script>
 </head>
+
 <body>
   <div class="background-pattern">
-  <div class="wrapper">
-    <header class="header">
-      <div class="header-content">
-        <div class="header-left">
-          <span style="font-weight: bold">{</span> Kieran Singh <span style="font-weight: bold">}</span>
-        </div>
-        <div class="header-right">
-          <button id='btn-hamburger' data-id="btn-hamburger">
-            <div class="hamburger-btn-container">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-          </button>
-          <nav>
-            <ul>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#work">Work</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <a href="https://github.com/Kieran27">Github</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/kieransingh27/">LinkedIn</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-  <main>
-    <section class="hero-container">
-      <div class="hero-left">
-        <h1 id='header-main' class="header-main">Hi, I'm Kieran Singh</h1>
-        <h2 id='sub-header' class="sub-header">Front End Developer</h2>
-        <div id='hero-about' class="hero-about-me-container">
-          <a href="#about">Learn About Me</a>
-          <a href="#work">See My Work</a>
-        </div>
-        <div id='arrow-container' class="hero-arrow-container">
-          <button>
-            <div class="arrow"></div>
-          </button>
-        </div>
-      </div>
-      <div id="hero-right" class="hero-right">
-        <div class="img-mock"></div>
-      </div>
-    </section>
-    <section id="about" class="about-me-container">
-      <h2 class="section-header">About Me</h2>
-      <p>
-         I began my programming journey last December and, even with a few challenges and hiccups along the way, I find
-         myself <strong>enthralled</strong> by it. I love the challenge programming offers and the drive it provides to
-         constantly <strong>improve</strong>, learn new things and above all <strong>try</strong> new things.
-         <br><br>
-         Coming from a design background, I feel a certain <strong>affinity</strong> for front end development and enjoy
-         both the <strong>logical</strong> and <strong>design</strong> challenges that it brings. I'm <strong>passionate</strong>
-         about the process that goes into building websites and webapps and am looking for a junior developer position to
-         use my skills and <strong>learn</strong> amongst professionals.
-         <br><br>
-         I possess skills in <strong>Javascript, React</strong> as well as CSS and HTML. I also have backend exposure
-         through services such as <strong>Firebase</strong>.
-       </p>
-       <div class="resume-download-container">
-         <a href="https://drive.google.com/file/d/1CEzBqrxG1OsGoqqYsncWtnnQ3KOU0afp/view?usp=sharing">
-            See My Resume
-           <i class="fa-solid fa-up-right-from-square"></i>
-         </a>
-       </div>
-       <div class="skills-container-header">
-          <h3>Skills</h3>
-       </div>
-       <div class="skills-container">
-         <div class="skill">
-           <i class="devicon-javascript-plain colored"></i>
-           <span>Javascript</span>
-         </div>
-         <div class="skill">
-           <i class="devicon-react-original colored"></i>
-           <span>React</span>
-         </div>
-         <div class="skill">
-           <i class="devicon-css3-plain colored"></i>
-           <span>CSS</span>
-         </div>
-         <div class="skill">
-           <i class="devicon-html5-plain colored"></i>
-           <span>HTMl</span>
-        </div>
-         <div class="skill">
-            <i class="devicon-firebase-plain colored"></i>
-            <span>Firebase</span>
-         </div>
-       </div>
-    </section>
-    <div id='work' class="projects-container-full">
-      <section class="projects-container">
-        <h2 class="section-header">
-          My Work
-        </h2>
-        <div class="projects-container-grid">
-          <div class="project-section">
-            <div class="project-left">
-              <img src="./assets/projects-widescreen/chatter.png" alt="">
-            </div>
-            <div class="project-right">
-              <h3>Chatter</h3>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-content">
+          <div class="header-left">
+            <span style="font-weight: bold">{</span> Kieran Singh <span style="font-weight: bold">}</span>
+          </div>
+          <div class="header-right">
+            <button id='btn-hamburger' data-id="btn-hamburger">
+              <div class="hamburger-btn-container">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+            <nav>
               <ul>
                 <li>
-                  React
-                  <i class="devicon-react-original"></i>
-                   |
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  Firebase
-                  <i class="devicon-firebase-plain"></i>
-                  |
+                  <a href="#work">Work</a>
                 </li>
                 <li>
-                  Javascript
-                  <i class="devicon-firebase-plain"></i>
-                  |
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="https://github.com/Kieran27">Github</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/kieransingh27/">LinkedIn</a>
                 </li>
               </ul>
-              <p class="project-headline">
-                Real-Time Messaging App
-              </p>
-              <div class="project-info">
-                <p>
-                  A realtime, fullstack messaging app built using React with authentication,
-                  data storage and cloud storage services provided through Firebase.
-                </p>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Kieran27/Chat-App">
-                  Repo
-                  <i class="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://kieran27.github.io/Chat-App/">
-                  Live Site
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </a>
-              </div>
-
-            </div>
+            </nav>
           </div>
-
-          <div class="project-section">
-            <div class="project-left">
-              <img src="./assets/projects-widescreen/where's-waldo.png" alt="">
-            </div>
-            <div class="project-right">
-              <h3>Where's Waldo</h3>
-              <ul>
-                <li>
-                  React
-                  <i class="devicon-react-original"></i>
-                  |
-                </li>
-                <li>
-                  Firebase
-                  <i class="devicon-firebase-plain"></i>
-                   |
-                </li>
-              </ul>
-              <p class="project-headline">
-                Image Tagging Game
-              </p>
-              <div class="project-info">
-                <p>
-                  A image tagging app based on the popular children's book, where's Waldo.
-                  Built with React, React Router with Firebase providing backend services.
-                </p>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Kieran27/TOP---Img-Tagging-App">
-                  Repo
-                  <i class="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://kieran27.github.io/TOP---Img-Tagging-App/">
-                  Live Site
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="project-section">
-            <div class="project-left">
-              <img src="./assets/projects-widescreen/shopping-cart.png" alt="">
-            </div>
-            <div class="project-right">
-              <h3>Bike Store</h3>
-              <ul>
-                <li>
-                  React
-                  <i class="devicon-react-original"></i>
-                  |
-                </li>
-                <li>
-                  Javascript
-                  <i class="devicon-javascript-plain"></i>
-                  |
-                </li>
-              </ul>
-              <p class="project-headline">
-                Frontend E-commerce SPA
-              </p>
-              <div class="project-info">
-                <p>
-                  A frontend SPA of an e-commerce webapp built with a functional shopping
-                  cart. Built with React with routing provided through React Router.
-                </p>
-
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Kieran27/TOP---Shopping-Cart">
-                  Repo
-                  <i class="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://kieran27.github.io/TOP---Shopping-Cart/">
-                  Live Site
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-section">
-            <div class="project-left">
-              <img src="./assets/projects-widescreen/battleship.png" alt="">
-            </div>
-            <div class="project-right">
-              <h3>Battleship</h3>
-              <ul>
-                <li>
-                  Javascript
-                  <i class="devicon-javascript-plain"></i>
-                  |
-                </li>
-                <li>
-                  Jest
-                  <i class="devicon-jest-plain"></i>
-                  |
-                </li>
-              </ul>
-              <p class="project-headline">
-                The Classic Game of Battleship
-              </p>
-              <div class="project-info">
-                <p>
-                  A recreation of the classic game of battleship. Playable against
-                  an AI. Built with Javascript and tested through the Jest Testing
-                  Framework.
-                </p>
-
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Kieran27/TOP---Battleship">
-                  Repo
-                  <i class="fa-brands fa-github fa-lg"></i>
-                </a>
-                <a href="https://kieran27.github.io/TOP---Battleship/">
-                  Live Site
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </a>
-              </div>
-
-            </div>
-          </div>
-
         </div>
-        <!-- <div class="projects-grid">
-
-          <div class="project">
-            <div class="project-img-container">
-              <img src="assets/project-chatter.png" alt="">
-              <div class="project-hover-container">
-                <div class="project-info hover-state">
-                  <div class="project-header-container">
-                    <h4 class='project-header'>Chatter</h4>
-                    <div class="project-header-container-right">
-                      <i class="devicon-react-original"></i>
-                      <i class="devicon-firebase-plain"></i>
-                    </div>
-                  </div>
-                  <p>
-                    A realtime, fullstack messaging app built using React with authentication,
-                    data storage and cloud storage services provided through Firebase.
-                  </p>
-                  <div class="project-link-container">
-                    <a class="project-link" href="https://kieran27.github.io/Chat-App/">Live Site</a>
-                    <a class="project-link" href="https://github.com/Kieran27/Chat-App">Repo</a>
-                  </div>
-                </div>
-              </div>
+      </header>
+      <main>
+        <section class="hero-container">
+          <div class="hero-left">
+            <h1 id='header-main' class="header-main">Hi, I'm Kieran Singh</h1>
+            <h2 id='sub-header' class="sub-header">Front End Developer</h2>
+            <div id='hero-about' class="hero-about-me-container">
+              <a href="#about">Learn About Me</a>
+              <a href="#work">See My Work</a>
             </div>
-            <div class="project-info no-hover">
-              <div class="project-header-container">
-                <h4 class='project-header'>Chatter</h4>
-                <div class="project-header-container-right">
-                  <i class="devicon-react-original"></i>
-                  <i class="devicon-firebase-plain"></i>
-                </div>
-              </div>
-              <p>
-                A realtime, fullstack messaging app built using React with authentication,
-                data storage and cloud storage services provided through Firebase.
-              </p>
-              <div class="project-link-container">
-                <a class="project-link" href="https://kieran27.github.io/Chat-App/">Live Site</a>
-                <a class="project-link" href="https://github.com/Kieran27/Chat-App">Repo</a>
-              </div>
+            <div id='arrow-container' class="hero-arrow-container">
+              <button>
+                <div class="arrow"></div>
+              </button>
             </div>
           </div>
-
-          <div class="project">
-            <div class="project-img-container">
-              <img src="assets/project-where's-waldo.png" alt="">
-              <div class="project-hover-container">
-                <div class="project-info hover-state">
-                  <div class="project-header-container">
-                    <h4 class='project-header'>Where's Waldo</h4>
-                    <div class="project-header-container-right">
-                      <i class="devicon-react-original"></i>
-                      <i class="devicon-firebase-plain"></i>
-                    </div>
-                  </div>
-                  <p>
-                    A image tagging app based on the popular children's book, where's Waldo.
-                    Built with React, React Router with Firebase providing backend services.
-                  </p>
-                  <div class="project-link-container">
-                    <a class="project-link" href="https://kieran27.github.io/TOP---Img-Tagging-App/">Live Site</a>
-                    <a class="project-link" href="https://github.com/Kieran27/TOP---Img-Tagging-App">Repo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-info no-hover">
-              <div class="project-header-container">
-                <h4 class='project-header'>Where's Waldo</h4>
-                <div class="project-header-container-right">
-                  <i class="devicon-react-original"></i>
-                  <i class="devicon-firebase-plain"></i>
-                </div>
-              </div>
-              <p>
-                A image tagging app based on the popular children's book, where's Waldo.
-                Built with React, React Router with Firebase providing backend services.
-              </p>
-              <div class="project-link-container">
-                <a class="project-link" href="https://kieran27.github.io/TOP---Img-Tagging-App/">Live Site</a>
-                <a class="project-link" href="https://github.com/Kieran27/TOP---Img-Tagging-App">Repo</a>
-              </div>
-            </div>
+          <div id="hero-right" class="hero-right">
+            <div class="img-mock"></div>
           </div>
-
-          <div class="project">
-            <div class="project-img-container">
-              <img src="assets/project-shopping-cart.png"/>
-              <div class="project-hover-container">
-                <div class="project-info hover-state">
-                  <div class="project-header-container">
-                    <h4 class='project-header'>Shopping Cart SPA</h4>
-                    <div class="project-header-container-right">
-                      <i class="devicon-react-original"></i>
-                    </div>
-                  </div>
-                  <p>
-                    A frontend SPA of an e-commerce webapp built with a functional shopping
-                    cart. Built with React with routing provided through React Router.
-                  </p>
-                  <div class="project-link-container">
-                    <a class="project-link" href="https://kieran27.github.io/TOP---Shopping-Cart/">Live Site</a>
-                    <a class="project-link" href="https://github.com/Kieran27/TOP---Shopping-Cart">Repo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-info no-hover">
-              <div class="project-header-container">
-                <h4 class='project-header'>Shopping Cart SPA</h4>
-                <div class="project-header-container-right">
-                  <i class="devicon-react-original"></i>
-                </div>
-              </div>
-              <p>
-                A frontend SPA of an e-commerce webapp built with a functional shopping
-                cart. Built with React with routing provided through React Router.
-              </p>
-              <div class="project-link-container">
-                <a class="project-link" href="https://kieran27.github.io/TOP---Shopping-Cart/">Live Site</a>
-                <a class="project-link" href="https://github.com/Kieran27/TOP---Shopping-Cart">Repo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-img-container">
-              <img src="assets/project-battleship.png" alt="">
-              <div class="project-hover-container">
-                <div class="project-info hover-state">
-                  <div class="project-header-container">
-                    <h4 class='project-header'>Battleship</h4>
-                    <div class="project-header-container-right">
-                      <div class="project-header-container-right">
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-jest-plain"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    A recreation of the classic game of battleship. Playable against
-                    an AI. Built with Javascript and tested through the Jest Testing
-                    Framework.
-                  </p>
-                  <div class="project-link-container">
-                    <a class="project-link" href="https://kieran27.github.io/TOP---Battleship/">Live Site</a>
-                    <a class="project-link"href="https://github.com/Kieran27/TOP---Battleship">Repo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-info no-hover">
-              <div class="project-header-container">
-                <h4 class='project-header'>Battleship</h4>
-                <div class="project-header-container-right">
-                  <i class="devicon-javascript-plain"></i>
-                  <i class="devicon-jest-plain"></i>
-                </div>
-              </div>
-              <p>
-                A recreation of the classic game of battleship. Playable against
-                an AI. Built with Javascript and tested through the Jest Testing
-                Framework.
-              </p>
-              <div class="project-link-container">
-                <a class="project-link" href="https://kieran27.github.io/TOP---Battleship/">Live Site</a>
-                <a class="project-link" href="https://github.com/Kieran27/TOP---Battleship">Repo</a>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
-        <div class="projects-more-container">
-          <a href="https://github.com/Kieran27?tab=repositories">
-            More Projects
-            <i class="fa-brands fa-github fa-lg"></i>
-          </a>
-        </div>
-      </section>
-    </div>
-    <div id='contact' class="contact-container-full">
-      <section class="contact-container">
-        <h2 class="section-header">
-          Contact Me
-        </h2>
-        <p>
-          Want to get in touch? I'd <strong>love</strong> to hear from you.
-          <br>
-          <strong>Refer Below:</strong>
-        </p>
-        <div class="contact-content-wrapper">
-          <div class="contact-left">
-            <a class="contact-me-link" href="mailto:kieransingh27@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-              Email Me
+        </section>
+        <section id="about" class="about-me-container">
+          <h2 class="section-header">About Me</h2>
+          <p>
+            I began my programming journey last December and, even with a few challenges and hiccups along the way, I find
+            myself <strong>enthralled</strong> by it. I love the challenge programming offers and the drive it provides to
+            constantly <strong>improve</strong>, learn new things and above all <strong>try</strong> new things.
+            <br><br>
+            Coming from a design background, I feel a certain <strong>affinity</strong> for front end development and enjoy
+            both the <strong>logical</strong> and <strong>design</strong> challenges that it brings. I'm <strong>passionate</strong>
+            about the process that goes into building websites and webapps and am looking for a junior developer position to
+            use my skills and <strong>learn</strong> amongst professionals.
+            <br><br>
+            I possess skills in <strong>Javascript, React</strong> as well as CSS and HTML. I also have backend exposure
+            through services such as <strong>Firebase</strong>.
+          </p>
+          <div class="resume-download-container">
+            <a href="https://drive.google.com/file/d/1CEzBqrxG1OsGoqqYsncWtnnQ3KOU0afp/view?usp=sharing">
+              See My Resume
+              <i class="fa-solid fa-up-right-from-square"></i>
             </a>
           </div>
-          <div class="contact-right">
-            <a class="contact-me-link" href="mailto:kieransingh27@gmail.com">
-              <i class="fa-brands fa-github"></i>
-                My Github
-            </a>
+          <div class="skills-container-header">
+            <h3>Skills</h3>
+          </div>
+          <div class="skills-container">
+            <div class="skill">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>Javascript</span>
+            </div>
+            <div class="skill">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+            <div class="skill">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTMl</span>
+            </div>
+            <div class="skill">
+              <i class="devicon-firebase-plain colored"></i>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </section>
+        <div id='work' class="projects-container-full">
+          <section class="projects-container">
+            <h2 class="section-header">
+              My Work
+            </h2>
+            <div class="projects-container-grid">
+              <div class="project-section">
+                <div class="project-left">
+                  <img src="./assets/projects-widescreen/chatter.png" alt="">
+                </div>
+                <div class="project-right">
+                  <h3>Chatter</h3>
+                  <ul>
+                    <li>
+                      React
+                      <i class="devicon-react-original"></i>
+                      |
+                    </li>
+                    <li>
+                      Firebase
+                      <i class="devicon-firebase-plain"></i>
+                      |
+                    </li>
+                    <li>
+                      Javascript
+                      <i class="devicon-firebase-plain"></i>
+                      |
+                    </li>
+                  </ul>
+                  <p class="project-headline">
+                    Real-Time Messaging App
+                  </p>
+                  <div class="project-info">
+                    <p>
+                      A realtime, fullstack messaging app built using React with authentication,
+                      data storage and cloud storage services provided through Firebase.
+                    </p>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/Kieran27/Chat-App">
+                      Repo
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://kieran27.github.io/Chat-App/">
+                      Live Site
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-section">
+                <div class="project-left">
+                  <img src="./assets/projects-widescreen/where's-waldo.png" alt="">
+                </div>
+                <div class="project-right">
+                  <h3>Where's Waldo</h3>
+                  <ul>
+                    <li>
+                      React
+                      <i class="devicon-react-original"></i>
+                      |
+                    </li>
+                    <li>
+                      Firebase
+                      <i class="devicon-firebase-plain"></i>
+                      |
+                    </li>
+                  </ul>
+                  <p class="project-headline">
+                    Image Tagging Game
+                  </p>
+                  <div class="project-info">
+                    <p>
+                      A image tagging app based on the popular children's book, where's Waldo.
+                      Built with React, React Router with Firebase providing backend services.
+                    </p>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/Kieran27/TOP---Img-Tagging-App">
+                      Repo
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://kieran27.github.io/TOP---Img-Tagging-App/">
+                      Live Site
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-section">
+                <div class="project-left">
+                  <img src="./assets/projects-widescreen/shopping-cart.png" alt="">
+                </div>
+                <div class="project-right">
+                  <h3>Bike Store</h3>
+                  <ul>
+                    <li>
+                      React
+                      <i class="devicon-react-original"></i>
+                      |
+                    </li>
+                    <li>
+                      Javascript
+                      <i class="devicon-javascript-plain"></i>
+                      |
+                    </li>
+                  </ul>
+                  <p class="project-headline">
+                    Frontend E-commerce SPA
+                  </p>
+                  <div class="project-info">
+                    <p>
+                      A frontend SPA of an e-commerce webapp built with a functional shopping
+                      cart. Built with React with routing provided through React Router.
+                    </p>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/Kieran27/TOP---Shopping-Cart">
+                      Repo
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://kieran27.github.io/TOP---Shopping-Cart/">
+                      Live Site
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-section">
+                <div class="project-left">
+                  <img src="./assets/projects-widescreen/battleship.png" alt="">
+                </div>
+                <div class="project-right">
+                  <h3>Battleship</h3>
+                  <ul>
+                    <li>
+                      Javascript
+                      <i class="devicon-javascript-plain"></i>
+                      |
+                    </li>
+                    <li>
+                      Jest
+                      <i class="devicon-jest-plain"></i>
+                      |
+                    </li>
+                  </ul>
+                  <p class="project-headline">
+                    The Classic Game of Battleship
+                  </p>
+                  <div class="project-info">
+                    <p>
+                      A recreation of the classic game of battleship. Playable against
+                      an AI. Built with Javascript and tested through the Jest Testing
+                      Framework.
+                    </p>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/Kieran27/TOP---Battleship">
+                      Repo
+                      <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://kieran27.github.io/TOP---Battleship/">
+                      Live Site
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects-more-container">
+              <a href="https://github.com/Kieran27?tab=repositories">
+                More Projects
+                <i class="fa-brands fa-github fa-lg"></i>
+              </a>
+            </div>
+          </section>
+        </div>
+        <div id='contact' class="contact-container-full">
+          <section class="contact-container">
+            <h2 class="section-header">
+              Contact Me
+            </h2>
+            <p>
+              Want to get in touch? I'd <strong>love</strong> to hear from you.
+              <br>
+              <strong>Refer Below:</strong>
+            </p>
+            <div class="contact-content-wrapper">
+              <div class="contact-left">
+                <a class="contact-me-link" href="mailto:kieransingh27@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+                  Email Me
+                </a>
+              </div>
+              <div class="contact-right">
+                <a class="contact-me-link" href="mailto:kieransingh27@gmail.com">
+                  <i class="fa-brands fa-github"></i>
+                  My Github
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="pullout-nav" data-id='sidenav'>
+          <div class="side-nav-content">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#work">Work</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="https://github.com/Kieran27">Github</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/kieransingh27/">LinkedIn</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="side-nav-footer">
+              <span style="font-weight: bold">{</span> Kieran Singh <span style="font-weight: bold">}</span>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            Made By <span style="font-weight: bold">{</span> Kieran Singh <span style="font-weight: bold">}</span>
+          </div>
+          <div class="footer-right">
+            <a href="mailto:kieransingh27@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/kieransingh27/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://github.com/Kieran27"><i class="fa-brands fa-github fa-xl"></i></a>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
-  <section class="pullout-nav" data-id='sidenav'>
-    <div class="side-nav-content">
-      <nav>
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="https://github.com/Kieran27">Github</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/kieransingh27/">LinkedIn</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="side-nav-footer">
-        <span style="font-weight: bold">{</span> Kieran Singh <span style="font-weight: bold">}</span>
-      </div>
-    </div>
-  </section>
-  </main>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-left">
-          Made By <span style="font-weight: bold">{</span> Kieran Singh <span style="font-weight: bold">}</span>
-        </div>
-        <div class="footer-right">
-          <a href="mailto:kieransingh27@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
-          <a href="https://www.linkedin.com/in/kieransingh27/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-          <a href="https://github.com/Kieran27"><i class="fa-brands fa-github fa-xl"></i></a>
-        </div>
-      </div>
-    </footer>
-  </div>
   </div>
 </body>
+
 </html>
