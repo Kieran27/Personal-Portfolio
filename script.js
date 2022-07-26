@@ -1,6 +1,10 @@
 const hamburgerBtn = document.querySelector("[data-id='btn-hamburger']")
 const sideNav = document.querySelector("[data-id='sidenav']")
+const bioShort = document.querySelector("[data-id='bio-short']")
+const bioLong = document.querySelector("[data-id='bio-long']")
 const body = document.querySelector('body');
+const bioShortBtn = document.querySelector("[data-id='btn-bio-short']")
+const bioLongBtn = document.querySelector("[data-id='btn-bio-long']")
 
 hamburgerBtn.addEventListener('click', (e) => {
   sideNav.classList.toggle('toggle-width');
@@ -18,6 +22,18 @@ sideNav.querySelectorAll('li').forEach(listItem => {
   });
 });
 
+bioShortBtn.addEventListener('click', () => {
+  bioShort.classList.toggle("toggle-display");
+  bioLong.classList.toggle("toggle-display");
+})
+
+bioLongBtn.addEventListener('click', () => {
+  bioShort.classList.toggle("toggle-display");
+  bioLong.classList.toggle("toggle-display");
+})
+
+
+// Function to determine scroll related animations
 const reveal = () => {
   const reveals = document.querySelectorAll(".reveal");
   for (let i=0; i < reveals.length; i++) {
