@@ -23,11 +23,17 @@ sideNav.querySelectorAll('li').forEach(listItem => {
 });
 
 bioShortBtn.addEventListener('click', () => {
+  bioShortBtn.classList.toggle("active-bio");
+  bioLongBtn.classList.toggle("active-bio");
+
   bioShort.classList.toggle("toggle-display");
   bioLong.classList.toggle("toggle-display");
 })
 
 bioLongBtn.addEventListener('click', () => {
+  bioShortBtn.classList.toggle("active-bio");
+  bioLongBtn.classList.toggle("active-bio");
+
   bioShort.classList.toggle("toggle-display");
   bioLong.classList.toggle("toggle-display");
 })
